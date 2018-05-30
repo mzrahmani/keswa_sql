@@ -1,0 +1,1 @@
+UPDATE ka_postmeta AS a JOIN ka_postmeta AS distrect ON a.post_id= distrect.post_id JOIN ka_postmeta AS area ON a.post_id = area.post_id SET a.meta_value = '' WHERE a.meta_key='ka_area' AND distrect.meta_key = 'ka_distrect' AND area.meta_key = 'ka_area' AND distrect.meta_value='19431' AND area.meta_value='2291'
